@@ -14,6 +14,7 @@ public class MaxAndMin {
 
         }
 
+        //for maximun
         int max = arr[0];
         for(int i=1; i<arr.length; i++){
             if(max < arr[i]){
@@ -21,5 +22,15 @@ public class MaxAndMin {
             }
         }
         System.out.println("max element of array: " + max);
+
+
+        // for minimun
+        int min = arr[0];
+        for(int i=1; i<arr.length; i++){
+            if(min > arr[i]){
+                min = arr[i];
+            }
+        }
+        System.out.println("max element of array: " + min);
     }
 }
