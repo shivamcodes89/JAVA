@@ -1,4 +1,4 @@
-public class Bank_Main{
+public class Bank__Main{
     public static void main(String[] args) {
         Bank bank = new Bank(855786984, "Shivam", 54637.74, "PNB83636", "Kanpur");
         
