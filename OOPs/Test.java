@@ -1,21 +1,27 @@
 public class Test{
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.name = "Bob";
-        cat.age = "5 Year";
-
-        System.out.println(cat.age);
+        Animal dog = new Dog(); // polymorphism
+        dog.makeSound();
     }
 }
 
 
 class Animal {
-    String name;
-    String age;
+    public void makeSound(){
+        System.out.println("Some Sound");
+    }
 }
 
 
 class Cat extends Animal{
-    String breed;
+    public void makeSound(){
+        System.out.println("Meow!");
+    }
+}
+
+class Dog extends Animal{
+    public void makeSound(){
+        System.out.println("Woof!");
+    }
 
 }
